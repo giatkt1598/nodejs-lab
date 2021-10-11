@@ -1,0 +1,12 @@
+{
+  "name": "own-npm-lib-USE",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "i": "^0.3.7",
+    "npm": "^8.0.0",
+    "own-npm-lib": "^1.0.13"
+  }
+}

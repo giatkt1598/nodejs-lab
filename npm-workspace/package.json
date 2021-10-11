@@ -1,0 +1,11 @@
+{
+  "name": "npm-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "my-button",
+    "use-my-button"
+  ]
+}

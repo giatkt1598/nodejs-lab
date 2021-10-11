@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "expressjs"
+        },
+        {
+            "path": "reactjs"
+        }
+    ],
+    "settings": {
+        "window.zoomLevel": 1,
+        "files.autoSave": "afterDelay"
+    }
+}
