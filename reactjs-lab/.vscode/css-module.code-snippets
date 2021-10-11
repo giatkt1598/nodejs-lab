@@ -1,0 +1,9 @@
+{
+    "Css Module": {
+        "prefix": "cssm",
+        "scope": "typescriptreact,javascriptreact",
+        "body": [
+            "import styles from '${TM_FILENAME_BASE}.module.${1:scss}';\n"
+        ]
+    }
+}

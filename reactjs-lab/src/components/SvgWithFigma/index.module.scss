@@ -1,0 +1,40 @@
+.box {
+    width: 300px;
+    height: 500px;
+    background-color: gray;
+    clip-path: path("M29 165.5C52.6667 106.833 178.928 -75.3361 306 35.9999C419.16 135.147 199.5 421 353 460.5C506.5 500 148 552.666 1 539C75.4446 430.217 192.034 412.926 29 165.5Z");
+}
+
+.myButton {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    // outline: black auto 1px;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background: url(./back-ground-image.svg) center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.figmaStyle {
+/* Rectangle 5 */
+
+// position: absolute;
+width: 191px;
+height: 105px;
+left: 384px;
+top: 926px;
+
+background: #C4C4C4;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+border-radius: 0px 0px 38px 0px;
+
+}

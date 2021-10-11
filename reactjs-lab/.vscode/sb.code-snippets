@@ -1,0 +1,31 @@
+{
+	"New StoryBook": {
+		"prefix": "sb",
+		"scope": "typescriptreact,javascriptreact",
+		"description": "Add new story for react component",
+		"body": [
+			"import React from 'react'",
+			"import ${2:${TM_FILENAME_BASE/(\\.stories)//g}} from '.'\n",
+			"export default {",
+			"\ttitle: '${1:title}',",
+			"\tcomponent: ${2:${TM_FILENAME_BASE/(\\.stories)//g}}",
+			"}\n",
+			"const Template = (args) => <${2:${TM_FILENAME_BASE/(\\.stories)//g}} {...args} />\n",
+			"export const ${3:Index} = Template.bind({});",
+			"$0"
+		]
+	},
+	"Add StoryBook Description": {
+		"prefix": "sbdes",
+		"scope": "typescriptreact,javascriptreact",
+		"body": [
+			"parameters: {",
+			"\tdocs: {",
+			"\t\tdescription: {",
+			"\t\t\tcomponent: '$0',",
+			"\t\t}",
+			"\t}",
+			"}"
+		]
+	}
+}

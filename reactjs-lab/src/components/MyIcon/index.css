@@ -1,0 +1,10 @@
+.icon {
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.icon-open {
+    transform: rotate(90deg);
+}
+.icon-close {
+    transform: rotate(0deg);
+}

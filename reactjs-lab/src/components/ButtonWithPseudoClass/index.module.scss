@@ -1,0 +1,32 @@
+.myButton {
+    display: inline-block;
+    height: 50px;
+    // background-color: #2C40B8;
+    background-color: #ffff00;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(./before.svg);
+        top: 0;
+        left: 0;
+        // z-index: -1;
+        height: 100%;
+        width: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 100%;
+        width: 45px;
+        height: 100%;
+        background: url(./after.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
