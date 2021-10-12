@@ -1,6 +1,6 @@
 import { Express } from "express";
 import productsController from "../controllers/productsController";
 
-export const routeSetup = (app: Express) => {
+export const initRoutes = (app: Express) => {
     app.use("/products", productsController)
 }

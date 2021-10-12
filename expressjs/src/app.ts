@@ -1,23 +1,24 @@
-import express from "express"
-import {createServer} from "http"
-import { connect } from "mongoose";
-import { routeSetup } from "./routers";
-import {config} from "dotenv"
+import express from "express";
+import { createServer } from "http";
+import { setup } from "./setup";
 
 const app = express();
-config();
-connect(process.env.MONGODB_CONNECTION_STRING ?? "");
-app.use(express.json())
 
-routeSetup(app);
+setup(app);
 
 const http = createServer(app);
 
-http.listen(4000, () => {
-    console.log("listening on *:" + 4000);
+http.listen(process.env.PORT, () => {
+    console.log("listening on *:" + process.env.PORT);
 });
 
 
 app.get("/", (req, res) => {
-    res.send("OK")
+    res.json([
+        {
+        yourName: "User", //Đây là dữ liêu mà endpoint này gửi đi
+        "__v": 1,
+    }
+    ])
+    // res.json("Hello")
 });
